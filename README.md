@@ -60,3 +60,23 @@ pip install torch torchvision decord safetensors opencv-python tqdm
 3. [https://youtu.be/6AR0Uj-prHQ](https://www.google.com/search?q=https://youtu.be/6AR0Uj-prHQ)
 4. [https://youtu.be/Pex0-KUbnxA](https://www.google.com/search?q=https://youtu.be/Pex0-KUbnxA)
 5. [https://youtu.be/E1ulV2cGrwA](https://www.google.com/search?q=https://youtu.be/E1ulV2cGrwA)
+
+
+## Описание моделей
+В проекте доступны два варианта весов:
+
+### model_acc_1.0.86.safetensors (Традиционная модель)
+
+Архитектура: EfficientNet-B0 (CNN) + GRU.
+
+Принцип: CNN извлекает пространственные признаки из каждого кадра, а двуслойная рекуррентная сеть (GRU) анализирует их последовательность во времени.
+
+Результат: Показывает более высокую стабильность на данном датасете.
+
+### violence_model_r2plus1d.safetensors (Fine-tuned модель)
+
+Архитектура: R(2+1)D.
+
+Принцип: Глубокое обучение на базе 3D-сверток, где временные и пространственные признаки вычисляются одновременно.
+
+Результат: Хорошо ловит сложные динамические паттерны движений.
