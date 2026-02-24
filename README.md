@@ -73,7 +73,7 @@ pip install torch torchvision decord safetensors opencv-python tqdm
 
 Результат: Показывает более высокую стабильность на данном датасете.
 
-### violence_model_r2plus1d.safetensors (Fine-tuned модель)
+### model_acc_99.66.safetensors (Fine-tuned модель)
 
 Архитектура: R(2+1)D.
 
